@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create</title>
+</head>
+<body>
+		  <form action="{% url 'store-create' %}" method="POST" enctype="multipart/form-data">
+            {{form.as_p}}
+            <input type="submit" value="Create" class="btn btn-outline-success">
+        </form>
+</body>
+</html>

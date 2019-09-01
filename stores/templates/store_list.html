@@ -72,17 +72,19 @@
 						<div class="image fit">
 							<img src="{% static 'images/cart.jpg' %}" alt="" />
 						</div>
+						<a href="{{ store.get_absolute_url }}">
 						<div class="content">
 							<header class="align-center">
 								<p>{{store.name}}</p>
 							</header>
 							<p align="center"> {{store.description}}</p>
 							<footer class="align-center">
-								<a href="" class="button alt">View Products</a>
+								<a href="{% url 'store-detail' store.slug %}" class="button alt">View Products</a>
 							</footer>
 						</div>
 					</div>
 				</div>
+						</a>
 				{% endfor %}
 			</div>
 		</div>

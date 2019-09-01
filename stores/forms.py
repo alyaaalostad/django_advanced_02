@@ -5,3 +5,9 @@ class StoreModelForm(forms.ModelForm):
     class Meta:
         model = Store
         fields = ['name', 'description']
+
+
+class CreateModelForm(forms.ModelForm):
+    class Meta:
+        model = Store
+        fields = '__all__'
